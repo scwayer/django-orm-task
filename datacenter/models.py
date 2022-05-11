@@ -39,10 +39,12 @@ def get_duration(visit):
     else:
         return localtime() - visit.entered_at
 
+
 def format_duration(duration):
     hours = int(duration.total_seconds() // 3600)
     minutes = int((duration.total_seconds() % 3600) // 60)
     return f'{hours}:{minutes}'
+
 
 def is_visit_long(visit):
     return get_duration(visit) > timedelta(hours=1)
