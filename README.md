@@ -9,11 +9,11 @@
 Данные для подключения к БД должны располагаться в переменных окружения.
 Для этого в корне проекта необходимо создать файл `.env`. Содержимое файла, например:
 ```
-HOST=checkpoint.devman.org
-PORT=5434
-NAME=checkpoint
-USER=guard
-PASSWORD=osim5
+HOST=sample.host.org
+PORT=1234
+NAME=sample
+USER=user
+PASSWORD=password
 DEBUG=True
 ```
 Python3 должен быть уже установлен. 
