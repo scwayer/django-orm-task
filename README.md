@@ -9,12 +9,14 @@
 Данные для подключения к БД должны располагаться в переменных окружения.
 Для этого в корне проекта необходимо создать файл `.env`. Содержимое файла, например:
 ```
-HOST=sample.host.org
-PORT=1234
-NAME=sample
-USER=user
-PASSWORD=password
+DB_HOST=sample.host.org
+DB_PORT=1234
+DB_NAME=sample
+DB_USER=user
+DB_PASSWORD=password
 DEBUG=True
+SECRET_KEY=someSecretKey
+ALLOWED_HOSTS=localhost
 ```
 Python3 должен быть уже установлен. 
 Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
